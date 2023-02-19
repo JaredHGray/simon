@@ -6,37 +6,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Simon</title>
         <link rel="icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="main.css" />
+        <!-- Include bootstrap CSS framework -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+        />
     </head>
-    <body>
-        <header>
-            <h1>Simon<sup>&reg;</sup></h1>
-            <nav>
-            <menu>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="play.html">Play</a></li>
-                <li><a href="scores.html">Scores</a></li>
-                <li><a href="about.html">About</a></li>
+    <body class="bg-dark text-light">
+        <header class="container-fluid">
+            <nav class="navbar fixed-top navbar-dark">
+            <a class="navbar-brand" href="#">Simon<sup>&reg;</sup></a>
+            <menu class="navbar-nav" style="flex-direction: row;">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="play.html" class="nav-link">Play</a>
+                </li>
+                <li class="nav-item">
+                    <a href="scores.html" class="nav-link">Scores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
             </menu>
             </nav>
-            <hr />
         </header>
 
-        <MAIN>
+        <MAIN class="container-fluid bg-secondary text-center">
+        <div>
             <h3>Simon says...</h3>
             <h1>Welcome!</h1>
             <p>Login to Play</p>
             <form method="get" action="play.html">
-                <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Your name here" required/>
-                <button type="submit">Login</button>
+                <button type="submit" class="btn btn-primary">Login</button>
             </form>
+        </div>
         </MAIN>
 
-        <footer>
-            <hr />
+        <footer class="bg-dark text-dark text-muted">
             <span class="text-reset">J Gray</span>
-            <br />
-            <a href="https://github.com/JaredHGray/simon.git">GitHub</a>
+            <a class="text-reset" href="https://github.com/JaredHGray/simon.git">GitHub</a>
           </footer>
     </body>
 </html>

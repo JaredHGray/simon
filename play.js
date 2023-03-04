@@ -163,3 +163,17 @@ class Game {
         return scores;
     }
 }
+
+const game = new Game();
+
+function delay(milliseconds) {
+    return new Promise((resolve) =>{
+        setTimeout(() => {
+            resolve(true);
+        }, milliseconds);
+    })
+}
+
+function loadSound(filename) {
+    return new Audio('assets/' + filename);
+  }

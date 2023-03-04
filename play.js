@@ -146,7 +146,7 @@ class Game {
         let found = false;
         for(const [i, prevScore] of scores.entries()){
             if(score > prevScore.score){
-                scores.splice(i, 0, newScore);
+                scores.splice(i, 0, newscore);
                 found = true;
                 break;
             }
